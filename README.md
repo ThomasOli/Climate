@@ -32,7 +32,7 @@ User Input Revolution: Transformed user interactions with the TextField Widget, 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/baa66434-b3a9-4f9c-a81b-d3858aa6f23a)
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/3964da83-7676-4467-b34f-ccf0c72e5a66)
 
-
+  
 
 
 
