@@ -1,6 +1,6 @@
 # Climate
 Weather app that updates the weather in real time with reactive images and facts. 
-![image](https://github.com/ThomasOli/Climate/assets/51518411/d8d678aa-041e-4097-88a6-2111fbdcfd0d)
+
 
 App Description: 
 
@@ -25,3 +25,8 @@ Stateful Widgets in Harmony: Managed Stateful Widgets' lifecycles. App responded
 Real-Time Location Integration: The Geolocator package captures live location data for both iOS and Android. The app became location-aware, opening the door to innovative possibilities.
 
 User Input Revolution: Transformed user interactions with the TextField Widget, gathered input, creating interactive forms that enhanced engagement.
+
+![image](https://github.com/ThomasOli/Climate/assets/51518411/ef3e7615-f1ea-4c14-ae0c-416ef7521977)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/89957e85-da9a-403f-a93b-4f16ce34b2f9)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/ba8b6c1f-8e08-4f85-a188-5d97da6a043d)
+
