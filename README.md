@@ -2,6 +2,7 @@
 Weather app that updates the weather in real time with reactive images and facts. 
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/90d94996-fa9a-46d3-af3c-51c7015cc26d)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/961c60fe-d0f2-48d2-af4c-cb0d8b504bd6)
 App Description: 
 
 This app made use of asynchronous programming using the Dart language. 
@@ -28,7 +29,7 @@ User Input Revolution: Transformed user interactions with the TextField Widget, 
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/5eca16a7-b3c2-41c7-8852-9952d5ef0de5)
 
-![image](https://github.com/ThomasOli/Climate/assets/51518411/961c60fe-d0f2-48d2-af4c-cb0d8b504bd6)
+
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/baa66434-b3a9-4f9c-a81b-d3858aa6f23a)
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/3964da83-7676-4467-b34f-ccf0c72e5a66)
 
