@@ -3,6 +3,7 @@
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/90d94996-fa9a-46d3-af3c-51c7015cc26d)
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/961c60fe-d0f2-48d2-af4c-cb0d8b504bd6)
+
 **App Description:** 
 
 This app made use of asynchronous programming using the Dart language.
