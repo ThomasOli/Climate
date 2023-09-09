@@ -4,7 +4,7 @@
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/90d94996-fa9a-46d3-af3c-51c7015cc26d)
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/961c60fe-d0f2-48d2-af4c-cb0d8b504bd6)
 
-**App Description:** 
+## App Description:
 
 This app made use of asynchronous programming using the Dart language.
 
@@ -39,11 +39,11 @@ User Input Revolution: Transformed user interactions with the TextField Widget, 
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/a7f9dc41-7068-499f-87ad-9dc1ca047dab)
 
-**Techniques Used**
+## Techniques Used
 
 _Receiving and Generating User Location_
 
-**Geolocator API**
+### Geolocator API
 
 The Geolocator plugin version 3.0.1 allowed me to integrate the fetching of current location
 weather data without the user’s need to specify their location. I chose this API for its cross-platform functionality and flexibility in specifying the accuracy of the current location function.
@@ -51,8 +51,7 @@ The following code was written with device-specific requirements in mind to enab
 functionality
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/176c7ae0-f483-4b73-aad6-bb150d77f749)
 
-
-**Asynchronous Programming**
+### Asynchronous Programming
 
 Calling on the Geolocator plugin required a reference to the device’s internal framework and
 connection to GPS, creating a time delay. To speed up loading times that prevented other tasks
@@ -71,7 +70,7 @@ its response.
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/7c2ad06c-e726-482e-a1a9-3b51edd3020b)
 
-**Stateless & Stateful Widgets**
+### Stateless & Stateful Widgets
 
 As the basic building block of the UI, both stateful and stateless widgets were each used to
 generate the screens of the application. Stateless widgets are immutable when built, which is
@@ -119,7 +118,7 @@ To prevent the application from crashing when the location is off or not connect
 statements were utilized. With much of the app relying on external sources, it’s more error-prone,
 making it necessary to account for these errors: 
 
-**Fetching & Processing Weather Data**
+## Fetching & Processing Weather Data
 
 **OpenWeatherMap API3**
 
@@ -159,7 +158,7 @@ properties:
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/e9e676ce-f124-4972-b710-69507b74f323)
 
-**_Generating Quips and Background Images_**
+## _Generating Quips and Background Images_
 
 **Stack**
 Navigator is a routing widget that manages the routing and display of pages, managing them in a
