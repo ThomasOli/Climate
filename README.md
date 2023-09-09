@@ -41,7 +41,7 @@ User Input Revolution: Transformed user interactions with the TextField Widget, 
 
 **Techniques Used**
 
-Receiving and Generating User Location
+_Receiving and Generating User Location_
 
 **Geolocator API**
 
