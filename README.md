@@ -29,14 +29,8 @@ Real-Time Location Integration: The Geolocator package captures live location da
 User Input Revolution: Transformed user interactions with the TextField Widget, gathered input, and created interactive forms that enhanced engagement.
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/5eca16a7-b3c2-41c7-8852-9952d5ef0de5)
-
-
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/baa66434-b3a9-4f9c-a81b-d3858aa6f23a)
-
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/3964da83-7676-4467-b34f-ccf0c72e5a66)
-
-  
-
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/a7f9dc41-7068-499f-87ad-9dc1ca047dab)
 
 ## Techniques Used
