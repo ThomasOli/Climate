@@ -38,29 +38,6 @@ User Input Revolution: Transformed user interactions with the TextField Widget, 
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/a7f9dc41-7068-499f-87ad-9dc1ca047dab)
 
-
-**Design:**
-![image](https://github.com/ThomasOli/Climate/assets/51518411/9f9d06d0-91a6-4f3d-b22a-0dc80527cba3)
-![image](https://github.com/ThomasOli/Climate/assets/51518411/a9526d96-dead-4875-b6be-9296012644e2)
-![image](https://github.com/ThomasOli/Climate/assets/51518411/47ecf536-0400-4dc9-ba1a-bbb433f6555b)
-
-
-**Functions:**
-![image](https://github.com/ThomasOli/Climate/assets/51518411/4cd29d7b-5fbc-426d-94ce-9e785dc9ed06)
-![image](https://github.com/ThomasOli/Climate/assets/51518411/fcba8c0b-7d20-44da-9c26-3f8505f9dafb)
-![image](https://github.com/ThomasOli/Climate/assets/51518411/e033f17b-6059-45fc-865a-9b4ce7945426)
-![image](https://github.com/ThomasOli/Climate/assets/51518411/b4f5935a-1bb3-4026-a398-f75594157aea)
-
-**Parsing JSON:**
-![image](https://github.com/ThomasOli/Climate/assets/51518411/a068518b-f3b7-487f-b87e-f46fa43d3936)
-
-![image](https://github.com/ThomasOli/Climate/assets/51518411/e5a79e2d-840c-4e9b-8ca5-b5c070c87d7e)
-
-**Screen Design:**
-![image](https://github.com/ThomasOli/Climate/assets/51518411/988e4953-a4c1-4926-a2c8-334339e543ed)
-![image](https://github.com/ThomasOli/Climate/assets/51518411/a2983504-005c-4656-a84e-14ace06560db)
-![image](https://github.com/ThomasOli/Climate/assets/51518411/c5ffa4f2-7bac-4106-8756-fe24d950faff)
-
 **Techniques Used**
 Receiving and Generating User Location
 **Geolocator API**
@@ -128,3 +105,74 @@ extensibility. Parent widgets have divided the application into
 manageable sections for new widgets to be smoothly added in.
 Should a widget be added, the entire screen does not need
 to be altered, instead, only a secondary parent widget. 
+Exceptions
+To prevent the application from crashing when the location is off or not connected to GPS, try-catch
+statements were utilized. With much of the app relying on external sources, it’s more error-prone,
+making it necessary to account for these errors: 
+
+**Fetching & Processing Weather Data**
+**OpenWeatherMap API3**
+This API was used due to its vast repository of information on cities around the world. The API
+allowed any platform to request weather data with just a registered APIKEY, making weather data
+widely available for my application.
+
+
+**HTTP Library**
+I used the HTTP plugin to access external website data, particularly the OpenWeatherMap API.
+Integrating HTTP with asynchronous functions, I set error handling functions to catch situations
+where no data is fetched or when the process is invalid. In this case, error code 200. 
+
+**JSON Parsing**
+The HTTP plugin fetchs the OpenWeatherMap weather information in JSON format, which is
+made up of key-value pairs in a hierarchal tree format. JsonDecode is then passed to generate a
+map based on the parsed JSON string for easy access to specific values the program needs. The JSON value is accessed through 2 levels and identified with the key, the brackets specify the
+exact piece of data that the program requires, which is the city name, condition, and temperature
+(converted into an INT for simplicity).
+
+![image](https://github.com/ThomasOli/Climate/assets/51518411/c8bd37c7-bbc2-4876-a0de-2ae40be84a40)
+
+Because OpenWeatherMap provides more than enough
+information, a class with encapsulated values that are needed is used to store data separately
+from the JSON map. Inheritance is achieved within this class, as WeatherModel’s
+WeatherModel() function is extended within this class, calling on another class’s function.
+
+![image](https://github.com/ThomasOli/Climate/assets/51518411/e9e676ce-f124-4972-b710-69507b74f323)
+
+
+**_Generating Quips and Background Images_**
+**Stack**
+Navigator is a routing widget that manages the routing and display of pages, managing them in a
+stack. 
+![image](https://github.com/ThomasOli/Climate/assets/51518411/38591ac0-daa2-43a5-a703-64bfd78f6103)
+
+This featured integrated well with the Spinkit package, providing for lower load times and a
+smoother user interface. The spinkit loading screen was pushed onto the navigator and popped
+after, allowing multiple pages to be rendered at one instance(visually aesthetic transitions) and
+routed to every screen in the application(backward navigation). The spin kit package
+enabled an animation to be played while the current location data and
+OpenWeatherMap information was being fetched:
+![image](https://github.com/ThomasOli/Climate/assets/51518411/ad2f45c1-51b5-4e15-ab6c-d46b138dfa85)
+
+**Design:**
+![image](https://github.com/ThomasOli/Climate/assets/51518411/9f9d06d0-91a6-4f3d-b22a-0dc80527cba3)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/a9526d96-dead-4875-b6be-9296012644e2)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/47ecf536-0400-4dc9-ba1a-bbb433f6555b)
+
+
+**Functions:**
+![image](https://github.com/ThomasOli/Climate/assets/51518411/4cd29d7b-5fbc-426d-94ce-9e785dc9ed06)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/fcba8c0b-7d20-44da-9c26-3f8505f9dafb)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/e033f17b-6059-45fc-865a-9b4ce7945426)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/b4f5935a-1bb3-4026-a398-f75594157aea)
+
+**Parsing JSON:**
+![image](https://github.com/ThomasOli/Climate/assets/51518411/a068518b-f3b7-487f-b87e-f46fa43d3936)
+
+![image](https://github.com/ThomasOli/Climate/assets/51518411/e5a79e2d-840c-4e9b-8ca5-b5c070c87d7e)
+
+**Screen Design:**
+![image](https://github.com/ThomasOli/Climate/assets/51518411/988e4953-a4c1-4926-a2c8-334339e543ed)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/a2983504-005c-4656-a84e-14ace06560db)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/c5ffa4f2-7bac-4106-8756-fe24d950faff)
+
+
