@@ -40,8 +40,11 @@ User Input Revolution: Transformed user interactions with the TextField Widget, 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/a7f9dc41-7068-499f-87ad-9dc1ca047dab)
 
 **Techniques Used**
+
 Receiving and Generating User Location
+
 **Geolocator API**
+
 The Geolocator plugin version 3.0.1 allowed me to integrate the fetching of current location
 weather data without the user’s need to specify their location. I chose this API for its cross-platform functionality and flexibility in specifying the accuracy of the current location function.
 The following code was written with device-specific requirements in mind to enable this plugin’s
@@ -115,18 +118,22 @@ statements were utilized. With much of the app relying on external sources, it�
 making it necessary to account for these errors: 
 
 **Fetching & Processing Weather Data**
+
 **OpenWeatherMap API3**
+
 This API was used due to its vast repository of information on cities around the world. The API
 allowed any platform to request weather data with just a registered APIKEY, making weather data
 widely available for my application.
 
 
 **HTTP Library**
+
 I used the HTTP plugin to access external website data, particularly the OpenWeatherMap API.
 Integrating HTTP with asynchronous functions, I set error handling functions to catch situations
 where no data is fetched or when the process is invalid. In this case, error code 200. 
 
 **JSON Parsing**
+
 The HTTP plugin fetchs the OpenWeatherMap weather information in JSON format, which is
 made up of key-value pairs in a hierarchal tree format. JsonDecode is then passed to generate a
 map based on the parsed JSON string for easy access to specific values the program needs. The JSON value is accessed through 2 levels and identified with the key, the brackets specify the
@@ -151,6 +158,7 @@ properties:
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/e9e676ce-f124-4972-b710-69507b74f323)
 
 **_Generating Quips and Background Images_**
+
 **Stack**
 Navigator is a routing widget that manages the routing and display of pages, managing them in a
 stack. 
