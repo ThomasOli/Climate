@@ -153,6 +153,7 @@ properties:
 ## _Generating Quips and Background Images_
 
 **Stack**
+
 Navigator is a routing widget that manages the routing and display of pages, managing them in a
 stack. 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/38591ac0-daa2-43a5-a703-64bfd78f6103)
