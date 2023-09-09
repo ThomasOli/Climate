@@ -16,22 +16,23 @@ Networking Prowess with Dart HTTP: The power of Dart's HTTP package connected wi
 
 API Integration Mastery: Seamlessly integrated APIs into the application. Made use of real-world data to craft engaging and interactive experiences.
 
-JSON Parsing Simplified: JSONs parsing using Dart's convert package, making complex data manipulation a breeze.
+JSON Parsing Simplified: JSON parsing using Dart's convert package, makes complex data manipulation a breeze.
 
-Sleek Navigation: Screen-to-screen transitions using the Navigator, managing data flow, ensuring a seamless and intuitive user experience.
+Sleek Navigation: Screen-to-screen transitions using the Navigator, managing data flow, and ensuring a seamless and intuitive user experience.
 
-Robust Exception Handling: With try, catch, and throw, to handle exceptions, ensuring your apps remained stable and reliable.
+Robust Exception Handling: With try, catch, and throw, to handle exceptions, ensuring your apps remain stable and reliable.
 
 Stateful Widgets in Harmony: Managed Stateful Widgets' lifecycles. App responded dynamically to user interactions, providing a polished and fluid interface.
 
 Real-Time Location Integration: The Geolocator package captures live location data for both iOS and Android. The app became location-aware, opening the door to innovative possibilities.
 
-User Input Revolution: Transformed user interactions with the TextField Widget, gathered input, creating interactive forms that enhanced engagement.
+User Input Revolution: Transformed user interactions with the TextField Widget, gathered input, and created interactive forms that enhanced engagement.
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/5eca16a7-b3c2-41c7-8852-9952d5ef0de5)
 
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/baa66434-b3a9-4f9c-a81b-d3858aa6f23a)
+
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/3964da83-7676-4467-b34f-ccf0c72e5a66)
 
   
@@ -42,8 +43,8 @@ User Input Revolution: Transformed user interactions with the TextField Widget, 
 Receiving and Generating User Location
 **Geolocator API**
 The Geolocator plugin version 3.0.1 allowed me to integrate the fetching of current location
-weather data without the user’s need to specify their location. I chose this API for its crossplatform functionality and flexibility in specifying the accuracy of the current location function.
-The following code was written with device specific requirements in mind to enable this plugin’s
+weather data without the user’s need to specify their location. I chose this API for its cross-platform functionality and flexibility in specifying the accuracy of the current location function.
+The following code was written with device-specific requirements in mind to enable this plugin’s
 functionality
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/176c7ae0-f483-4b73-aad6-bb150d77f749)
 
@@ -56,12 +57,14 @@ allow the application to execute the next commands at the same time, regardless 
 function’s completion. After specifying getCurrentLocation() to be asynchronous, the app can
 continue to build UI elements after the function is called on and loading, drastically reducing run
 time.
+
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/d7ca1dae-1fa1-4767-82b5-ce14b3c21901)
 
-Using the Future class, the function returns a Future or a “placeholder” value that will complete
+Using the Future class, the function returns a Future or a “placeholder” value that will be completed
 when the result is available, which allows the program to function instead of blocking all
 computation. The .getCurrentPosition() function fetches data while the position variable “awaits”
 its response.
+
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/7c2ad06c-e726-482e-a1a9-3b51edd3020b)
 
 **Stateless & Stateful Widgets**
@@ -85,6 +88,7 @@ call on the build methods or state specific methods of these two parent classes.
 allows a page to run smoothly and not require a declaration of state type for every widget.
 The following is a depiction of the state management between the two screens within the
 application; each made up of both types of widgets:
+
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/93cf5f0b-df98-4921-96cc-eef56dd69031)
 
 To build the GUI, every widget is used to display a piece of
@@ -136,8 +140,15 @@ information, a class with encapsulated values that are needed is used to store d
 from the JSON map. Inheritance is achieved within this class, as WeatherModel’s
 WeatherModel() function is extended within this class, calling on another class’s function.
 
-![image](https://github.com/ThomasOli/Climate/assets/51518411/e9e676ce-f124-4972-b710-69507b74f323)
+![image](https://github.com/ThomasOli/Climate/assets/51518411/15d2885e-f52c-44c3-af98-1e9806b994fc)
 
+By initializing a new WeatherModel() object; _LocationScreenState now allows the use of
+functions like .getWeatherIcon() from the WeatherModel class, inheriting the other class’s
+properties:
+
+![image](https://github.com/ThomasOli/Climate/assets/51518411/aa188f83-4fee-4ec8-a62b-ca4652de5f3e)
+
+![image](https://github.com/ThomasOli/Climate/assets/51518411/e9e676ce-f124-4972-b710-69507b74f323)
 
 **_Generating Quips and Background Images_**
 **Stack**
@@ -151,6 +162,7 @@ after, allowing multiple pages to be rendered at one instance(visually aesthetic
 routed to every screen in the application(backward navigation). The spin kit package
 enabled an animation to be played while the current location data and
 OpenWeatherMap information was being fetched:
+
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/ad2f45c1-51b5-4e15-ab6c-d46b138dfa85)
 
 **Design:**
