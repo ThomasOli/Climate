@@ -53,6 +53,7 @@ functionality
 
 
 **Asynchronous Programming**
+
 Calling on the Geolocator plugin required a reference to the device’s internal framework and
 connection to GPS, creating a time delay. To speed up loading times that prevented other tasks
 from being carried out, I utilized asynchronous operations which complete work in the background to
@@ -71,6 +72,7 @@ its response.
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/7c2ad06c-e726-482e-a1a9-3b51edd3020b)
 
 **Stateless & Stateful Widgets**
+
 As the basic building block of the UI, both stateful and stateless widgets were each used to
 generate the screens of the application. Stateless widgets are immutable when built, which is
 used for the search bar, city screen icons, and home screen icons: objects that don’t need to be
