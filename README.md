@@ -169,27 +169,27 @@ OpenWeatherMap information was being fetched:
 
 
 
-**Design:**
+## Design:
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/9f9d06d0-91a6-4f3d-b22a-0dc80527cba3)
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/a9526d96-dead-4875-b6be-9296012644e2)
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/47ecf536-0400-4dc9-ba1a-bbb433f6555b)
 
 
-**Functions:**
+## Functions:
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/4cd29d7b-5fbc-426d-94ce-9e785dc9ed06)
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/fcba8c0b-7d20-44da-9c26-3f8505f9dafb)
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/e033f17b-6059-45fc-865a-9b4ce7945426)
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/b4f5935a-1bb3-4026-a398-f75594157aea)
 
-**Parsing JSON:**
+## Parsing JSON:
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/a068518b-f3b7-487f-b87e-f46fa43d3936)
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/e5a79e2d-840c-4e9b-8ca5-b5c070c87d7e)
 
-**Screen Design:**
+## Screen Design:
 
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/988e4953-a4c1-4926-a2c8-334339e543ed)
 ![image](https://github.com/ThomasOli/Climate/assets/51518411/a2983504-005c-4656-a84e-14ace06560db)
